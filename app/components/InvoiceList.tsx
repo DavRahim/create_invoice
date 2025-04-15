@@ -26,10 +26,10 @@ async function getData(userId: string) {
         },
     });
 
+    
+    console.log(data);
     return data;
 }
-
-
 export async function InvoiceList() {
     const session = await requireUser();
     const data = await getData(session.user?.id as string);
