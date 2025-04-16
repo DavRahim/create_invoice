@@ -25,9 +25,6 @@ async function getData(userId: string) {
             createdAt: "desc",
         },
     });
-
-    
-    console.log(data);
     return data;
 }
 export async function InvoiceList() {
