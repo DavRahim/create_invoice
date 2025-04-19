@@ -11,6 +11,7 @@ import { DropdownMenu, DropdownMenuContent, DropdownMenuItem, DropdownMenuLabel,
 import { signOut } from "../utils/auth";
 import prisma from "../utils/db";
 import { redirect } from "next/navigation";
+import { Toaster } from "sonner";
 
 
 async function getUser(userId: string) {
@@ -109,6 +110,7 @@ export default async function DashboardLayout({ children }: { children: ReactNod
                     </main>
                 </div>
             </div>
+            <Toaster richColors closeButton theme="light" />
         </>
     )
 }

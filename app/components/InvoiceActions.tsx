@@ -38,7 +38,6 @@ export function InvoiceActions({ id, status }: iAppProps) {
             }
         );
     };
-
     return (
         <DropdownMenu>
             <DropdownMenuTrigger asChild>
